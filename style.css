@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url(./fonts/Geist-Regular.otf);
+}
+
+body {
+  font-family: "Geist", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 100px 10px;
+  background-color: #282a3a;
+  color: #fff;
+  width: 350px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 14px;
+  color: #ffffff91;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+
+  form {
+    gap: 10px;
+    margin-bottom: 40px;
+
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #fff;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      background-color: transparent;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
+
+main {
+  .location {
+    gap: 5px;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .weather-icon {
+    padding: 40px 0;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+footer {
+  hr {
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  .temperature {
+    gap: 10px;
+    font-size: 48px;
+    letter-spacing: 2px;
+  }
+
+  .w-desc {
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .info {
+    gap: 40px;
+  }
+}
